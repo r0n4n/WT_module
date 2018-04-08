@@ -35,6 +35,30 @@ title('Error p')
 plot(err_q(:,1),err_q(:,2)) ;
 title('Error q') 
 
+%% Udc 
+
+plot(Udc(:,1),Udc(:,2)) ;
+axis([0 0.04 -20 40])
+title('Udc') 
+%% Uabc
+plot(Uabc(:,1),Uabc(:,2)) ;
+hold on 
+plot(Uabc(:,1),Uabc(:,3)) ;
+hold on 
+plot(Uabc(:,1),Uabc(:,4)) ;
+axis([0 0.04 -20 20])
+title('Uabc') 
+
+%% Iabc
+plot(Iabc(:,1),Iabc(:,2)) ;
+axis([0 0.04 -20 20])
+hold on 
+plot(Iabc(:,1),Iabc(:,3)) ;
+hold on 
+plot(Iabc(:,1),Iabc(:,4)) ;
+axis([0 0.04 inf 6])
+title('Iabc') 
+
 %%%%%%%%%%%%%%%%%%% SUPLOT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 subplot(2,1,1)

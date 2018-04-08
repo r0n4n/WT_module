@@ -1,0 +1,67 @@
+avr. 04, 2018 4:29:39 PM  
+STDERR: com.microchip.crownking.mplabinfo 2018-04-04T14:29Z INFO DeviceSupport::createHeaderList, could not create AC AC244063. exception: null
+
+avr. 04, 2018 4:29:39 PM  
+STDERR: com.microchip.crownking 2018-04-04T14:29Z INFO Searching jar-containing directory: /C:/Program Files (x86)/Microchip/MPLABX/v4.15/mplab_ipe/lib
+
+avr. 04, 2018 4:29:39 PM  
+STDERR: com.microchip.crownking.edc 2018-04-04T14:29Z INFO Searching: /C:/Program Files (x86)/Microchip/MPLABX/v4.15/mplab_ipe/lib
+
+avr. 04, 2018 4:29:39 PM  
+STDERR: com.microchip.crownking.edc 2018-04-04T14:29Z INFO Searching for: /content/edc/AC/AC244064.AC
+
+avr. 04, 2018 4:29:39 PM  
+STDERR: com.microchip.crownking.mplabinfo 2018-04-04T14:29Z INFO DeviceSupport::createHeaderList, could not create AC AC244064. exception: null
+
+avr. 04, 2018 4:29:39 PM  
+STDERR: com.microchip.crownking 2018-04-04T14:29Z INFO Searching jar-containing directory: /C:/Program Files (x86)/Microchip/MPLABX/v4.15/mplab_ipe/lib
+
+avr. 04, 2018 4:29:39 PM  
+STDERR: com.microchip.crownking.edc 2018-04-04T14:29Z INFO Searching: /C:/Program Files (x86)/Microchip/MPLABX/v4.15/mplab_ipe/lib
+
+avr. 04, 2018 4:29:39 PM  
+STDERR: com.microchip.crownking.edc 2018-04-04T14:29Z INFO Searching for: /content/edc/AC/AC244065.AC
+
+avr. 04, 2018 4:29:39 PM  
+STDERR: com.microchip.crownking.mplabinfo 2018-04-04T14:29Z INFO DeviceSupport::createHeaderList, could not create AC AC244065. exception: null
+
+avr. 04, 2018 4:29:39 PM  
+STDERR: com.microchip.crownking 2018-04-04T14:29Z INFO Searching jar-containing directory: /C:/Program Files (x86)/Microchip/MPLABX/v4.15/mplab_ipe/lib
+
+avr. 04, 2018 4:29:39 PM  
+STDERR: com.microchip.crownking.edc 2018-04-04T14:29Z INFO Searching: /C:/Program Files (x86)/Microchip/MPLABX/v4.15/mplab_ipe/lib
+
+avr. 04, 2018 4:29:39 PM  
+STDERR: com.microchip.crownking.edc 2018-04-04T14:29Z INFO Searching for: /content/edc/AC/AC244066.AC
+
+avr. 04, 2018 4:29:39 PM  
+STDERR: com.microchip.crownking.mplabinfo 2018-04-04T14:29Z INFO DeviceSupport::createHeaderList, could not create AC AC244066. exception: null
+
+avr. 04, 2018 4:29:39 PM  
+STDERR: com.microchip.crownking 2018-04-04T14:29Z INFO Searching jar-containing directory: /C:/Program Files (x86)/Microchip/MPLABX/v4.15/mplab_ipe/lib
+
+avr. 04, 2018 4:29:40 PM  
+STDERR: com.microchip.crownking.edc 2018-04-04T14:29Z INFO Cannot find an <edc:Oscillator> element.
+
+avr. 04, 2018 4:29:40 PM  
+STDERR: com.microchip.crownking.edc 2018-04-04T14:29Z INFO Has EDS, but no <edc:ExtendedDataSpace>
+
+avr. 04, 2018 4:29:40 PM java.util.prefs.WindowsPreferences <init>
+AVERTISSEMENT: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
+avr. 04, 2018 4:29:41 PM com.microchip.mplab.mdbcore.RealICETool.RIMessages OutputMessage
+INFOS: 
+
+avr. 04, 2018 4:29:49 PM org.openide.util.Exceptions printStackTrace
+SEVERE: null
+com.microchip.mplab.mdbcore.debugger.DebugException
+	at com.microchip.mplab.mdbcore.debugger.MCDebugger.ReleaseFromReset(MCDebugger.java:1843)
+	at com.microchip.mplab.ipelib.device.ToolsLookup.releaseFromReset(ToolsLookup.java:1122)
+	at com.microchip.mplab.ipelib.IPELibrary.ReleaseFromReset(IPELibrary.java:699)
+	at com.microchip.mplab.ipecmd.commandline.CmdApp.setReleasefromReset(CmdApp.java:1985)
+	at com.microchip.mplab.ipecmd.commandline.CmdApp.runApplication(CmdApp.java:3107)
+	at com.microchip.mplab.ipecmd.IPECMD.main(IPECMD.java:249)
+Caused by: com.microchip.mplab.mdbcore.common.debug.exceptions.MDBCommonToolException
+	at com.microchip.mplab.mdbcore.RealICETool.RIDbgToolManager.ReleaseTargetFromReset(RIDbgToolManager.java:821)
+	at com.microchip.mplab.mdbcore.debugger.MCDebugger.ReleaseFromReset(MCDebugger.java:1840)
+	... 5 more
+
