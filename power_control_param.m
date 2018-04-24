@@ -23,7 +23,7 @@ RL =120  ; % Load resistance
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%% Udcref controller %%%%%%%%%%%%%%%%%%%%
-Udcref = 100 ; % DC_link voltage (V)
+Udcref = 120 ; % DC_link voltage (V)
 Hp = 0 ;
 Hq = 0 ;
 fs = 100000 ; % sampling period
