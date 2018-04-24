@@ -1,14 +1,17 @@
-function [ spq10, spq11, spq00, spq01] = switch_table_init2()
+function [ spq10, spq11, spq00, spq01] = switch_table_init3()
 %UNTITLED2 Summary of this function goes here
 %   Detailed explanation goes here
 
-% http://sci-hub.tw/http://ieeexplore.ieee.org/document/673716/
+
+% https://sci-hub.tw/https://ieeexplore.ieee.org/document/6940772/ 
+% THE NEW SWITCHING TABLE FOR DPC OF PWM RECTIFIER 
 
 spq10 =zeros(12,3) ; 
 spq11 =zeros(12,3) ; 
 spq00 =zeros(12,3) ; 
 spq01 =zeros(12,3) ; 
 
+% init the voltage vectors  
 % init the voltage vectors  
 V0=[0 0 0] ; 
 V1=[1 0 0] ; 
@@ -17,34 +20,34 @@ V3=[0 1 0] ;
 V4=[0 1 1] ; 
 V5=[0 0 1] ; 
 V6=[1 0 1] ; 
-V7=[1 1 1] ; 
+V7=[1 1 1] ;
 
 
-spq10(1,:) = V6 ;  
-spq10(2,:) = V7 ; 
-spq10(3,:) = V1 ; 
-spq10(4,:) = V0 ; 
-spq10(5,:) = V2 ; 
-spq10(6,:) = V7 ; 
-spq10(7,:) = V3 ; 
-spq10(8,:) = V0 ; 
-spq10(9,:) = V4 ; 
-spq10(10,:) = V7 ; 
-spq10(11,:) = V5 ; 
-spq10(12,:) = V0 ;
+spq10(1,:) = V5 ;  
+spq10(2,:) = V6 ; 
+spq10(3,:) = V6 ; 
+spq10(4,:) = V1 ; 
+spq10(5,:) = V1 ; 
+spq10(6,:) = V2 ; 
+spq10(7,:) = V2 ; 
+spq10(8,:) = V3 ; 
+spq10(9,:) = V3 ; 
+spq10(10,:) = V4 ; 
+spq10(11,:) = V4 ; 
+spq10(12,:) = V5 ;
 
-spq11(1,:) = V7 ;  
-spq11(2,:) = V7 ; 
-spq11(3,:) = V0 ; 
-spq11(4,:) = V0 ; 
-spq11(5,:) = V7 ; 
-spq11(6,:) = V7 ; 
-spq11(7,:) = V0 ; 
-spq11(8,:) = V0 ; 
-spq11(9,:) = V7 ; 
-spq11(10,:) = V7 ; 
-spq11(11,:) = V0 ; 
-spq11(12,:) = V0 ; 
+spq11(1,:) = V2 ;  
+spq11(2,:) = V3 ; 
+spq11(3,:) = V3 ; 
+spq11(4,:) = V4 ; 
+spq11(5,:) = V4 ; 
+spq11(6,:) = V5 ; 
+spq11(7,:) = V5 ; 
+spq11(8,:) = V6 ; 
+spq11(9,:) = V6 ; 
+spq11(10,:) = V1 ; 
+spq11(11,:) = V1 ; 
+spq11(12,:) = V2 ; 
 
 spq00(1,:) = V6 ;  
 spq00(2,:) = V1 ; 

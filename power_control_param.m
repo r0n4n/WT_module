@@ -16,22 +16,22 @@ w=2*pi*f ; % source voltage pulsation
 fluxeff =  0.15 ;
 Ka = fluxeff ;
 p = 4 ;  % nombre de paires de pôles
-L = 10e-2 ; % Inductor of the source
-R = 0 ; % Resistance of the source
-C = 2e-2 ; % DC-link capacitor
-RL = 80 ; % Load resistance
+L = 8e-3 ; % Inductor of the source
+R = 0.1 ; % Resistance of the source
+C = 2350e-6 ; % DC-link capacitor
+RL =120  ; % Load resistance
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%% Udcref controller %%%%%%%%%%%%%%%%%%%%
-Udcref = 10 ; % DC_link voltage (V)
-Hp = 20 ;
+Udcref = 100 ; % DC_link voltage (V)
+Hp = 0 ;
 Hq = 0 ;
-fs = 10000 ; % sampling period
+fs = 50000 ; % sampling period
 Ts = 1/fs ; % sampling period
 fsw = 4e3 ; % Switching frequency
 Tsw = Ts * 10 ;
-fsw_diviser = 0 ;
-P = 1  ;
+fsw_diviser = 3 ;
+P = 0.1  ;
 I = 0.1 ; 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -48,14 +48,15 @@ radps2hz = 1/(2*pi) ; % rad/s to Hz
 % mode 2 : http://sci-hub.tw/http://ieeexplore.ieee.org/document/673716/
 
 
-switch_table_mode = 1 ;
+switch_table_mode = 3 ;
 
 switch switch_table_mode
     case 1
         [ spq10, spq11, spq00, spq01] = switch_table_init1() ;
-        buffer = spq10(length(),:) ; 
-        for i=1: 
+        
         
     case 2
-         [ spq10, spq11, spq00, spq01] = switch_table_init2() ;
+        [ spq10, spq11, spq00, spq01] = switch_table_init2() ;
+    case 3
+        [ spq10, spq11, spq00, spq01] = switch_table_init3() ;
 end
