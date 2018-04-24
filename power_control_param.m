@@ -30,7 +30,7 @@ fs = 100000 ; % sampling period
 Ts = 1/fs ; % sampling period
 fsw = 4e3 ; % Switching frequency
 Tsw = Ts * 10 ;
-fsw_diviser = 10 ;
+fsw_diviser = 5 ;
 P = 0.1  ;
 I = 0.1 ; 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
