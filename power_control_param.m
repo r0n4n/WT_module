@@ -26,11 +26,11 @@ RL =120  ; % Load resistance
 Udcref = 100 ; % DC_link voltage (V)
 Hp = 0 ;
 Hq = 0 ;
-fs = 50000 ; % sampling period
+fs = 100000 ; % sampling period
 Ts = 1/fs ; % sampling period
 fsw = 4e3 ; % Switching frequency
 Tsw = Ts * 10 ;
-fsw_diviser = 3 ;
+fsw_diviser = 10 ;
 P = 0.1  ;
 I = 0.1 ; 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
