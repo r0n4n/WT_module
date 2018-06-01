@@ -23,7 +23,7 @@ RL =120  ; % Load resistance
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%% Udcref controller %%%%%%%%%%%%%%%%%%%%
-Udcref = 120 ; % DC_link voltage (V)
+Udcref = 100 ; % DC_link voltage (V)
 Hp = 0 ;
 Hq = 0 ;
 fs = 100000 ; % sampling period
@@ -60,3 +60,8 @@ switch switch_table_mode
     case 3
         [ spq10, spq11, spq00, spq01] = switch_table_init3() ;
 end
+
+%% 
+scale_time = 0.2 ; 
+y_min = -1 ; 
+y_max = 11 ; 

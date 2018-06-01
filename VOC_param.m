@@ -28,11 +28,19 @@ Hp = 0 ;
 Hq = 0 ;
 fs = 100000 ; % sampling period
 Ts = 1/fs ; % sampling period
-fsw = 4e3 ; % Switching frequency
+fsw = 10e3 ; % Switching frequency
 Tsw = Ts * 10 ;
 fsw_diviser = 5 ;
-P = 0.1  ;
-I = 0.1 ; 
+alphai = 0.9*(2*pi*fs/10)  ; %(3.12 equation) 
+U_Kp = 1  ;
+U_Ki = 1 ; 
+
+Id_Kp = alphai*L ;
+Id_Ki = alphai*R ; % 100000
+
+Iq_Kp = Id_Kp ;
+Iq_Ki = Id_Ki ; % 1000000
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%% constant conversion %%%%%%%%%%%%%%%%
@@ -42,21 +50,3 @@ wm2we = p ; % mecanical velocity to electrical velocity
 radps2hz = 1/(2*pi) ; % rad/s to Hz 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Select switch table
-
-% mode 1  :  http://bluebox.ippt.pan.pl/~bulletin/(54-3)287.pdf
-% mode 2 : http://sci-hub.tw/http://ieeexplore.ieee.org/document/673716/
-
-
-switch_table_mode = 3 ;
-
-switch switch_table_mode
-    case 1
-        [ spq10, spq11, spq00, spq01] = switch_table_init1() ;
-        
-        
-    case 2
-        [ spq10, spq11, spq00, spq01] = switch_table_init2() ;
-    case 3
-        [ spq10, spq11, spq00, spq01] = switch_table_init3() ;
-end
