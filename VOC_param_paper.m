@@ -31,7 +31,7 @@ IGBTONOFF_final_value = 1;
 %***********************************************************************
 % CARRIER BASED PWM PARAMETERS
 %***********************************************************************
-Carrier_amp = 10; % Triangular wave Amplitude
+Carrier_amp = 100; % Triangular wave Amplitude
 Carrier_f = 10e3; % Triangular wave frequency = Fsw
 Tc = 1/Carrier_f; % Triangular wave period
 
@@ -61,8 +61,10 @@ Vpcc_hat = Eg ; % Ph-to-gnd - Possible for stiff grid, otherwise, Vpcc < Eg
 
 %CURRENT PI Regulator (thesis, state-variable W=Vdc^2)
 alphaI = Fs/10*2*pi; % Bandwidth in rad/s
-Kpi = alphaI*L_hat ; 
-Kii = alphaI*R_hat ; 
+% Kpi = alphaI*L_hat ; 
+% Kii = alphaI*R_hat ; 
+Kpi = 0.001 ; 
+Kii = 0.0 ; 
 
 %VOLTAGE PI Regulator (thesis, state-variable W=Vdc^2)
 alphaV = Fs/100*2*pi; % Bandwidth in rad/s

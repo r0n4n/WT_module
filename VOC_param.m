@@ -26,9 +26,9 @@ RL =120  ; % Load resistance
 Udcref = 120 ; % DC_link voltage (V)
 Hp = 0 ;
 Hq = 0 ;
-fs = 100000 ; % sampling period
+fs = 500000 ; % sampling period
 Ts = 1/fs ; % sampling period
-fsw = 10e3 ; % Switching frequency
+Fsw = 10e3 ; % Switching frequency
 Tsw = Ts * 10 ;
 fsw_diviser = 5 ;
 alphai = 0.9*(2*pi*fs/10)  ; %(3.12 equation) 
@@ -40,6 +40,8 @@ Id_Ki = alphai*R ; % 100000
 
 Iq_Kp = Id_Kp ;
 Iq_Ki = Id_Ki ; % 1000000
+
+Carrier_amp = 100; % Triangular wave Amplitude
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
